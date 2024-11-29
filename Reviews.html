@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-..." crossorigin="anonymous">
+
+  <!--Jquerry-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--GOOGLE FORNTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Rock+Salt&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+
+  <!--COMMON PAGE-->
+  <link rel="stylesheet" href="css/Hstyles.css">
+  <!--<link rel="stylesheet" href="/willow.css">-->
+  <!--<link rel="stylesheet" href="/haze.css">-->
+
+</head>
+
+<body>
+
+  <!--Navigation system-->
+  <nav class="navbar navbar-expand-lg light">  <!--**-->
+
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">Brand</a>
+
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item ms-auto">
+                  <a class="nav-link nav-text" href="#">Menu</a>
+              </li>
+              <li class="nav-item ms-auto">
+                  <a class="nav-link nav-text" href="#">Order</a>
+              </li>
+          </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+    <div class="container-fluid">
+
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Menu</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Order</a>
+              </li>
+          </ul>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <div class="side-image">  </div>
+
+  <div class="container mt-5">
+
+    <header class="jumbotron text-center image-background">
+
+      <h3 class="header-title">Customer Reviews</h3>
+
+    </header>
+
+    <div class="row review-container">
+
+      <!-- Review Card 1 -->
+      <div class="col-md-4">
+          <div class="card review-card">
+              <div class="card-body">
+                  <h5 class="card-title">John Doe</h5>
+                  <p class="star-rating">
+                      ★★★★☆
+                  </p>
+                  <p class="card-text">"Great product! It exceeded my expectations and I would definitely recommend it to others."</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Review Card 2 -->
+      <div class="col-md-4">
+          <div class="card review-card">
+              <div class="card-body">
+                  <h5 class="card-title">Jane Smith</h5>
+                  <p class="star-rating">
+                      ★★★★★
+                  </p>
+                  <p class="card-text">"Fantastic service and fast delivery. I'm very satisfied with my purchase!"</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Review Card 3 -->
+      <div class="col-md-4">
+          <div class="card review-card">
+              <div class="card-body">
+                  <h5 class="card-title">Emily Johnson</h5>
+                  <p class="star-rating">
+                      ★★★☆☆
+                  </p>
+                  <p class="card-text">"The product is good, but I had some issues with the shipping process."</p>
+              </div>
+          </div>
+      </div>
+    </div>
+
+      <!--Submission Form-->
+      <div class="mt-5 text-center">
+        <h3 class="h3-title">Leave a Review</h3>
+      </div>
+
+
+      <form id="review-form" action="#" method="post">
+
+          <div class="form-group">
+              <label for="name-input" class="form-text">Your Name:</label>
+              <input type="text" class="form-control mt-1" id="name-input" required>
+          </div>
+
+          <div class="form-group mt-3">
+
+              <label for="rating-input" class="form-text">Rating:</label>
+              <select class="form-control mt-1" id="rating-input" required>
+                  <option value="">Select Rating</option>
+                  <option value="★★★★★">★★★★★</option>
+                  <option value="★★★★☆">★★★★☆</option>
+                  <option value="★★★☆☆">★★★☆☆</option>
+                  <option value="★★☆☆☆">★★☆☆☆</option>
+                  <option value="★☆☆☆☆">★☆☆☆☆</option>
+              </select>
+
+          </div>
+
+          <div class="form-group mt-3">
+
+              <label for="review-input" class="form-text">Your Review:</label>
+              <textarea class="form-control mt-1" id="review-input" rows="6" required></textarea>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary mt-4">Submit Review</button>
+
+      </form>
+
+  </div>
+
+  <footer class="light footer-text text-center footer-bg"> <!-- the footer has its own style-->
+
+    <div class="container container-footer">
+
+      <div class="row">
+
+        <div class="col-md-2 image-container">
+
+          <img src="images/app_store.png" alt="AppStore Logo" class="picture-content-footer">
+
+        </div>
+
+        <div class="col-md-8">
+
+          <div class="">
+            <H2 class="f-text">Thank you for choosing Kimchi Tacos</H2>
+            <p class="f-text">--Where every meal is a celebration of flavor!--</p>
+            <p class="f-text">퓨전 맛보기: 한국의 맛, 타코 스타일!!.</p>
+          </div>
+
+          <div class=" navbar navbar-expand-lg footer-links">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">About Us</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">|</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">Contact/FAQ</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">|</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">Reviews</a>
+                </li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-2 image-container">
+
+          <img src="images/google_play.png" alt="GooglePlay Logo" class="picture-content-footer">
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </footer>
+
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+  <!-- JQuery -->
+  <script>
+   // Function to add a new review card
+   function addReviewCard(name, rating, text) {
+     var $newReview = $(`
+       <div class="col-md-4">
+        <div class="card review-card">
+            <div class="card-body">
+                <h5 class="card-title reviewer-name">${name}</h5>
+                <div class="star-rating rating">${rating}</div>
+                <p class="card-text review-text">"${text}"</p>
+            </div>
+        </div>
+        </div>`);
+
+     $('.review-container').append($newReview);
+    }
+
+   // Handle form submission
+   $('#review-form').submit(function(event) {
+       event.preventDefault(); // Prevent the default form submission
+
+       var name = $('#name-input').val();
+       var rating = $('#rating-input').val();
+       var text = $('#review-input').val();
+
+       // Add the new review card
+       addReviewCard(name, rating, text);
+
+       // Clear the form
+       this.reset();
+   });
+   </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

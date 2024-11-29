@@ -1,0 +1,287 @@
+/**GENERAL TAGS**/
+body{
+  margin: 0;
+  top: 0;
+  font-family: sans-serif;
+  background-image: url('../images/body_bg.webp');
+  background-size: cover;
+
+}
+
+header{
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media (max-width:992px) {
+  footer .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+
+  img.picture-content-footer {
+        width: 0px;
+      }
+
+}
+
+/** HEADER PART**/
+
+.light {
+  opacity: 1;
+  background-color: rgb(280 107 63);
+  color: white; /* Text color */
+  font-style: normal;
+}
+
+.nav-link{
+  color: white;
+}
+
+.nav-link:hover{
+  color: rgb(255 255 255 / 75%);
+}
+
+.nav-text{
+  font-family: "Sour Gummy", sans-serif;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.header-title{
+  font-family: "Rock Salt", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding-bottom: 10px;
+}
+
+.image-background{
+  background: url('../images/background-1.webp') center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 134px;
+  padding: 20px;
+  margin-bottom: 45px;
+}
+
+.header-text {
+  font-family: "Gaegu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.side-image {
+    position: fixed; /* Fix the image position so it stays in place during scrolling */
+    top: 0; /* Align to the top of the page */
+    left: 0; /* Align to the left of the page */
+    width: 100px; /* Set the desired width of the side image */
+    height: 100vh; /* Ensure it covers the full height of the viewport */
+    background: url('../images/Picture1.webp') center center; /* Adjust the positioning */
+    background-repeat: repeat-y;
+    background-size: contain; /* Ensure the image covers the width and height properly */
+    z-index: 1; /* Ensure it stays below other content */
+}
+
+/*ABOUT US PAGE*/
+/*MAIN*/
+
+.container{
+  padding-bottom: 45px;
+  padding-top: 25px;
+
+}
+
+.h2-title{
+  font-family: "Rock Salt", cursive;
+  font-size: 35px;
+  font-style: normal;
+  padding: 10px 10px;
+  background-color: rgb(280 107 63 / 96%);
+  width: max-content;
+  text-align: center;
+  display: inline-block;
+  color: white;
+}
+
+
+.image-container{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    position: relative;
+    top: 0;
+}
+
+.text-center{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  align-content: center;
+}
+
+.main-text{
+  font-family: "Parkinsans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.impact{
+  font-family: "Rock Salt", cursive;
+  font-style: normal;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.picture-content{
+  width: 100%;
+  height: auto;
+}
+
+/** CIRCULAR PICTURE WITH FADE**/
+
+ .image-container-circular {
+   display: flex;
+   justify-content: center; /* Centers horizontally */
+   align-items: center; /* Centers vertically */
+   position: relative;
+   top: 0;
+}
+
+.text {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay{
+  position: absolute;
+  border-radius: 318px;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease; Smooth transition for opacity */
+  /*  transition: opacity 0.5s ease; /* Smooth transition for opacity */
+}
+
+
+
+/*** CONTINUE PAGE ABOUT US ***/
+.col-image{
+  position: relative;
+}
+
+.col-text-img{
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  top: 181px;
+  font-family: "Rock Salt", cursive;
+  color: honeydew;
+}
+
+.col-img{
+  vertical-align: middle;
+  width: auto;
+  height: 65%;
+  position: relative;
+  z-index: -1;
+  right: -17%;
+  filter: blur(4px);
+}
+
+.col-text{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: "Rock Salt", cursive;
+  color: honeydew;
+  text-shadow: 20px 13px 20px black;
+}
+
+/*GENERAL FOOTER*/
+.footer-text{
+  font-family: "Sour Gummy", sans-serif;
+  font-style: normal;
+}
+
+.container-footer{
+  padding-bottom: 1px;
+}
+
+.footer-bg{
+  background: url('../images/footer-bg.png') center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 134px;
+  position: relative;
+  height: 100%;
+}
+
+.picture-content-footer{
+  width: 70%;
+  height: auto;
+}
+
+.footer-links{
+  display: inline-block
+}
+
+.f-text{
+  margin-top: -12px;
+}
+
+.nav-text-footer{
+  font-family: "Sour Gummy", sans-serif;
+  font-style: normal;
+  font-size: 15px;
+}
+
+
+
+
+/* CUSTOMER_REVIEW */
+
+.review-card {
+    margin-bottom: 20px;
+}
+.star-rating {
+    color: #FFD700; /* Gold color for stars */
+}
+
+.h3-title{
+  font-family: "Rock Salt", cursive;
+  font-weight: bold;
+  font-style: normal;
+  padding-bottom: 10px;
+  color: white;
+  text-shadow: 0px 5px 20px black;
+}
+
+.form-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 0px 1px 6px #000000;
+}
