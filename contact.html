@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="mexican food, korean food, delicious, hot food, koean near me, tacos, nachos">
+
+  <title>HOME</title>
+
+  <!--BOOTSTRAP-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!--jQuerry-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!--GOOGLE FONTS-->
+  <link href="https://fonts.googleapis.com/css2?family=Yrsa:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">  <link href="https://fonts.googleapis.com/css2?family=Gaegu&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&family=Rock+Salt&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <!--STYLES-->
+  <link id="theme" rel="stylesheet" type="text/css" href="css/general-style.css"> <!--General Stylesheet-->
+	<!-- <link id="theme" rel="stylesheet" type="text/css" href="css/hjkim_style.css"  -->  <!--Hyungju Haze Kim owner of the page-->
+
+
+
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">KIMCHI NACHOS</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav ms-auto">
+          <li class="nav-item ms-auto">
+              <a class="nav-link nav-text" href="index.html">Home</a>
+          </li>
+          <li class="nav-item ms-auto">
+              <a class="nav-link nav-text" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item ms-auto">
+              <a class="nav-link nav-text" href="order.html">Order</a>
+          </li>
+
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+   <div class="contactUs">
+   		<div class="headingTxt">
+	   		<h1>contact us</h1>
+	   		<p>
+	   			<br>We love hearing from our Guests! Let us know how we can help.
+				  <br>Please note: It's currently taking us a bit more time to respond than usual.
+				  <br>We appreciate your patience as we work to get you a reply as quickly as possible.
+	   		</p>
+	   	</div>
+
+   		<div class="faq">
+	   		<h2>Frequently Asked Questions</h2>
+		    <div class="layout">
+		        <div class="accordion">
+		            <div class="accordion__question">
+		                <p>1. What are Kimchi Nachos?</p>
+		            </div>
+		            <div class="accordion__answer">
+		                <p>Kimchi Nachos are a fusion dish combining the bold, tangy flavors of Korean kimchi with the classic cheesy, crunchy elements of traditional nachos. Our version includes crispy tortilla chips, melted cheese, spicy kimchi, and a variety of toppings like Korean BBQ, green onions, and sesame seeds.</p>
+		            </div>
+		        </div>
+		        <div class="accordion">
+		            <div class="accordion__question">
+		                <p>2. Can I customize my Kimchi Nachos?</p>
+		            </div>
+		            <div class="accordion__answer">
+		                <p>
+		                Yes! You can choose from our selection of proteins (like chicken, beef, pork, or tofu) and add extra toppings such as jalapeños, avocado, or extra cheese for an additional charge.
+		                </p>
+		            </div>
+		        </div>
+		        <div class="accordion">
+		            <div class="accordion__question">
+		                <p>3. Are the Kimchi Nachos spicy?</p>
+		            </div>
+		            <div class="accordion__answer">
+		                <p>
+		                Our Kimchi Nachos have a mild-to-medium spice level. If you prefer less heat, we can tone down the spice by reducing the kimchi or spicy sauce. Let us know your preference when placing your order.
+		                </p>
+		            </div>
+		        </div>
+		        <div class="accordion">
+		            <div class="accordion__question">
+		                <p>4. How do I place an order?</p>
+		            </div>
+		            <div class="accordion__answer">
+		                <p>
+		                You can order online through our website, on food delivery apps like Uber Eats and DoorDash, or by calling us directly.
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	<div class="contactInfo">
+		<h2>Leave us a comment</h2>
+			<form name="RegForm" onsubmit="return validateForm()" class='form'>
+	        <p>
+		        <label for="name">Name:</label>
+		        <input type="text" id="name" name="Name"
+		                placeholder="Enter your full name" />
+		        <span id="name-error" class="error-message"></span>
+	        </p>
+	        <p>
+	            <label for="address">Address:</label>
+	            <input type="text" id="address" name="Address"
+	                placeholder="Enter your address" />
+	            <span id="address-error" class="error-message"></span>
+	        </p>
+	        <p>
+	            <label for="email">E-mail Address:</label>
+	            <input type="text" id="email" name="EMail"
+	                placeholder="Enter your email" />
+	            <span id="email-error" class="error-message"></span>
+	        </p>
+	        <p>
+	            <label for="subject">Select Your Query:</label>
+	            <select id="subject" name="Subject">
+	                <option value="">
+	                    Select Query
+	                </option>
+	                <option value="OrderingandDelivery">
+	                    Ordering & Delivery
+	                </option>
+	                <option value="Dietary">
+	                    Dietary and Allergen Information
+	                </option>
+	                <option value="Payment">
+	                    Payment & Refunds
+	                </option>
+	                <option value="Other">
+	                    Other
+	                </option>
+	            </select>
+	            <span id="subject-error" class="error-message"></span>
+	       	</p>
+	        <p>
+	            <label for="comment">Comments:</label>
+	            <textarea id="comment" name="Comment"></textarea>
+	        </p>
+	        <p>
+	            <input type="checkbox" id="agree" name="Agree" />
+	            <label for="agree">I agree to the above
+	                information</label>
+	            <span id="agree-error" class="error-message"></span>
+	        </p>
+	        <p>
+	            <input type="submit" value="Send" name="Submit" />
+	            <input type="reset" value="Reset" name="Reset" />
+	        </p>
+	    </form>
+	</div>
+    </div>
+
+
+    <!-- Bootstrap JS and dependencies -->
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+
+
+<footer class="light footer-text text-center footer-bg ">
+    <div class="container container-footer">
+      <div class="row">
+
+        <div class="col-md-2 image-container">
+          <img src="images/app_store.png" alt="AppStore Logo" class="picture-content-footer">
+        </div>
+
+        <div class="col-md-8">
+
+          <div class="">
+            <H2 class="f-text">Thank you for choosing Kimchi Tacos</H2>
+            <p class="f-text">--Where every meal is a celebration of flavor!--</p>
+            <p class="f-text">퓨전 맛보기: 한국의 맛, 타코 스타일!!</p>
+          </div>
+
+          <div class=" navbar navbar-expand-lg footer-links">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">About Us</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">|</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">Contact/FAQ</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">|</a>
+                </li>
+                <li class="nav-item ms-auto">
+                    <a class="nav-link nav-text-footer" href="#">Reviews</a>
+                </li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="col-md-2 image-container">
+          <img src="images/google_play.png" alt="GooglePlay Logo" class="picture-content-footer">
+        </div>
+
+        <div class="row">
+
+          <div class="col">
+
+            <div class=" navbar navbar-expand-lg footer-links">
+
+              <ul class="navbar-nav ms-auto">
+
+                  <li class="nav-item ms-auto">
+                    <button class="btn-small" onclick="changeCSS('css/general-style.css')">General Theme</button>
+                  </li>
+                  <li class="nav-item ms-auto">
+                      <a class="nav-link nav-text-footer" href="#">|</a>
+                  </li>
+                  <li class="nav-item ms-auto">
+                    <button class="btn-small" onclick="changeCSS('css/hjkim_style.css')">Haze Kim Theme</button>
+                  </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+
+<!-- Jquerry -->
+<script src="js/jscontact.js" defer></script>
+<script src="js/stylesheet-change.js"></script>
+
+</body>
+</html>

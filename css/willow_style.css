@@ -1,0 +1,218 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+  background-color: #2e8b57; /* Sea Green */
+  font-family: 'Poppins', 'Roboto Slab', sans-serif; /* Modern and stylish fonts */
+  color: #ffffff; /* White text */
+  line-height: 1.6;
+}
+
+.bckg-light {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.card-style{
+  height: 200px;
+  object-fit: cover;
+  width:100%;
+}
+
+/* Navigation Bar */
+.navbar {
+  background-color: white; /* white bg */
+  border-bottom: 3px solid #32cd32; /* Lime Green */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #2e8b57;
+}
+
+.navbar .nav-link {
+  color: #2e8b57;
+  margin-right: 15px;
+}
+
+.navbar .navbar-brand:hover {
+  color: #c8e6c9; /* Light Green Hover */
+  text-decoration: underline;
+}
+
+.navbar .nav-link:hover {
+  color: #c8e6c9; /* Light Green Hover */
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #2e8b57; /* 본체와 동일한 Sea Green 색상 */
+  color: #ffffff; /* 흰색 텍스트 */
+  text-align: center;
+  padding: 20px 0; /* 세로 패딩 추가 */
+  border-top: none; /* 상단 경계선 제거 */
+  margin: 0; /* 여백 제거 */
+}
+
+/* Main Content Area */
+.container {
+  background-color: transparent; /* Transparent Background */
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: none; /* Remove shadow */
+}
+
+/* Buttons: "View Details" and "Add to Cart" */
+.btn {
+  background-color: #4caf50 !important; /* Green background */
+  color: #ffffff !important; /* White text */
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  transition: all 0.3s ease; /* Smooth hover effect */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn:hover {
+  background-color: #388e3c; /* Darker Green Hover */
+  color: #ffffff; /* Keep text white */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Glow effect */
+  transform: translateY(-3px); /* Lift effect */
+}
+
+.btn:active {
+  transform: translateY(0); /* Return to original position */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Reduce shadow */
+}
+
+/* Specific Button Styles */
+.btn-primary {
+  background-color: #007bff !important;/* Blue for "View Details" */
+  color: #ffffff !important; /* White text */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker Blue on Hover */
+}
+
+.btn-success {
+  background-color: #28a745 !important; /* Green for "Add to Cart" */
+  color: #ffffff !important; /* White text */
+}
+
+.btn-success:hover {
+  background-color: #1e7e34; /* Darker Green on Hover */
+}
+
+/* Card Style (Menu Items) */
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.02); /* Slight zoom-in */
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card .card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card .card-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #4caf50; /* Modern Green */
+}
+
+.card .card-text {
+  font-size: 1rem;
+  color: #666; /* Neutral Gray */
+}
+
+/* Detail Page Image */
+#menu-image {
+  border-radius: 10px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Quantity Buttons */
+#increase-quantity,
+#decrease-quantity {
+  background-color: #4caf50; /* Modern Green */
+  color: #ffffff; /* White */
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#increase-quantity:hover,
+#decrease-quantity:hover {
+  background-color: #388e3c; /* Darker Green */
+}
+
+#menu-quantity {
+  width: 50px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+/* Price Highlight */
+#menu-price {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e53935; /* Bright Red */
+  margin-bottom: 15px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card img {
+    height: 150px;
+  }
+
+  .btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+.btn-small{
+  width:95px;
+  justify-content: center;
+  background-color: yellow;
+  border-radius:8px;
+}
+
+.footer-links {
+    display: inline-block;
+}

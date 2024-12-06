@@ -1,0 +1,476 @@
+body{
+  margin: 0;
+  top: 0;
+  font-family: sans-serif;
+  background-color:#ccbcaa82;
+  color: black;
+}
+
+button{
+  background-color: yellow;
+  border-radius:8px;
+}
+
+h1,h3,h2{
+  text-align: center;
+  font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+  list-style-type:none;
+  text-decoration: none;
+  color: black;
+}
+
+.zindex{
+  position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	background-color: black;
+	padding: 10px;
+
+  text-align: center;
+  font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.light{
+  text-align: center;
+  font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.img-fluid{
+  width: auto;
+  height: 100vh;
+}
+
+.lead{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+.align-items-center{
+  justify-items:center;
+}
+
+.wrap {
+  position:relative;
+  /* display: inline-block; */
+  top:0;
+  width:100%;
+  height:100%;
+  transition: transform 0.8s ease-in-out;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.circle{
+  height: 100px;
+	width: 100px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+#order{
+	height: 230px;
+	width: 230px;
+	border-radius: 50%;
+	border: 1px;
+	background-color: #ffdd00d4;
+	color: black;
+  font-family: cursive;
+  font-size: 20px;
+  font-style: normal;
+}
+
+#section1 {
+
+}
+#section2 {
+	text-align: right;
+
+}
+#section3 {
+
+}
+#section4 {
+
+}
+
+.no-style{
+  list-style: none;
+}
+
+.nav-text-footer{
+  font-family: "Yuji Mai", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/**ABOUT US**/
+
+.image-container-circular {
+ display: flex;
+ justify-content: center; /* Centers horizontally */
+ align-items: center; /* Centers vertically */
+ position: relative;
+ top: 0;
+}
+
+.navbar-brand{
+  text-align: center;
+  font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.light{
+  background-color: white;
+}
+
+.picture-content{
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.overlay{
+  position: absolute;
+  border-radius: 318px;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease; /*Smooth transition for opacity  */
+}
+
+.main-text{
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-style: normal;
+  text-align: center;
+}
+
+.text-center{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  align-content: center;
+}
+
+.col-image{
+  position: relative;
+}
+
+.col-text-img{
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+  top: 196px;
+  left: 47px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 200;
+  color: honeydew;
+  background-color: #73812045;
+  border-radius: 42px;
+  width: 236px;
+  height: 114px;
+}
+
+.col-img{
+  vertical-align: middle;
+  width: auto;
+  height: 65%;
+  position: relative;
+  z-index: -1;
+  right: -17%;
+  filter: blur(0px);
+  opacity: 0;
+}
+
+.col-text{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family:  "Quicksand", sans-serif;
+  color: honeydew;
+  text-shadow:
+  0 0 20px black,
+  0 0 20px  black,
+  0 0 30px  black,
+  0 0 40px  black,
+  0 0 55px  black,
+  0 0 80px  black;
+}
+
+.footer-links{
+  display: inline-block
+}
+
+.picture-content-footer{
+  width: 70%;
+  height: auto;
+}
+
+
+
+/***CONTACT***/
+.nav-text{
+  text-align: center;
+  font-family: "Yuji Mai", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.headingTxt{
+  font-family:  "Quicksand", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align:center;
+}
+
+.layout{
+  left: 0px;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+}
+
+.accordion {
+  padding: 15px;
+  margin: 15px 0;
+  background: #72a6f563;
+  color: #9F0000;
+  border-radius: 12px;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion:hover {
+  cursor: pointer;
+  background-color: #72a6f5cc;
+  transform: scale(1.02);
+}
+
+.accordion__question p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.accordion__answer {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  display: none;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #73c8c98c;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.accordion.active .accordion__answer {
+  display: block;
+}
+
+.accordion__answer p {
+  margin: 0;
+  padding: 0;
+}
+
+.form{
+  max-width: 700px;
+  margin: auto;
+  padding: 50px;
+  padding-bottom: 50px;
+  color: black;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: green; /* Highlighted blue border */
+  outline: none;
+}
+
+select {
+  background-color: #f9fafc;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #333333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #4B4952;
+  transform: scale(1.03); /* Slight zoom on hover */
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.error-message {
+  color: #e74c3c; /* Modern red for errors */
+  font-size: 14px;
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+}
+
+
+/***menu***/
+
+.img-style{
+  height: 200px;
+  object-fit: fill;
+  width:100%;
+}
+
+.card-size{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 25%;
+  height: auto;
+}
+
+.card-body{
+  background-color: #ffe80042 ;
+}
+
+.card-title{
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  text-align: center;
+}
+
+.star-rating{
+  text-align: center;
+}
+
+.card-text{
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+  text-align: center;
+}
+
+/***FOOTER***/
+.image-container{
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  position: relative;
+  top: 0;
+}
+
+.footer-bg{
+ margin-top: 20px;
+}
+
+.me-2{
+  margin-right: .5rem !important;
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #6c0df0;
+  --bs-btn-border-color: #6c0df0;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #5906cd;
+  --bs-btn-hover-border-color: #5906cd;
+  --bs-btn-focus-shadow-rgb: 11, 172, 204;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #5906cd;
+  --bs-btn-active-border-color: #5906cd;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: #6c0df0;
+  --bs-btn-disabled-border-color: #6c0df0;
+}
+
+.btn-small{
+  width:95px;
+  justify-content: center;
+  background-color: yellow;
+  border-radius:8px;
+}
