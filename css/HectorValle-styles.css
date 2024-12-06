@@ -417,3 +417,7 @@ header{
 //
 //
 /
+
+.nav-link a.active {
+    color: purple; /* Color when the link is active (clicked) */
+}
