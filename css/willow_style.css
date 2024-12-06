@@ -216,3 +216,13 @@ footer {
 .footer-links {
     display: inline-block;
 }
+
+/* Footer */
+footer {
+  background-color: white; 
+  color: #2e8b57; 
+  text-align: center;
+  padding: 20px 0; 
+  border-top: none; 
+  margin: 0; 
+}
