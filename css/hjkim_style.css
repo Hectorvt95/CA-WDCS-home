@@ -265,3 +265,7 @@ footer{
 .footer-links {
     display: inline-block;
 }
+
+.nav-link a.active {
+    color: purple; /* Color when the link is active (clicked) */
+}
