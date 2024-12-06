@@ -226,3 +226,7 @@ footer {
   border-top: none; 
   margin: 0; 
 }
+
+.nav-link a.active {
+    color: purple; /* Color when the link is active (clicked) */
+}
